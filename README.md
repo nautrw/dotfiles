@@ -6,3 +6,4 @@ You will also have to install the following packages:
 ```
 zsh
 ```
+Afterward, you can move the files into your home directory.
