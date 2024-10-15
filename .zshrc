@@ -40,6 +40,9 @@ zstyle ':vcs_info:*' formats ' %F{blue}(git:%F{yellow}%b%F{blue})%f'
 
 PS1='%F{cyan}%~%f$vcs_info_msg_0_ %(?.%F{green}.%F{red})➜%b%f '
 
+# Completion
+setopt interactivecomments transientrprompt
+
 ### Plugins
 source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
