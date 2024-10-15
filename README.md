@@ -1,9 +1,7 @@
 # dotfiles
 These are my dotfiles
 ## Getting started
-You might have to run `git submodule update --init --recursive` when you clone the Git repo. This is so that every submodule updates.<br>
-You will also have to install the following packages:
-```
-zsh kitty exa bat ttf-jetbrains-mono-nerd neovim ripgrep wl-clipboard xclip
-```
-Afterward, you can move the files into your home directory.
+Assuming you are on a fresh install of EndeavourOS, with both `yay` and `make` installed, just `cd` into the dotfiles directory and run `make endeavour`. This will install the dotfiles.
+In cases where you want to delete the files created by the command, just run `make uninstall` to remove everything.
+
+At the end, just reboot (running `reboot` is an easy way to do so) to make changes take place.
