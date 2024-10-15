@@ -3,10 +3,6 @@ endeavour:
 	git clone https://github.com/nautrw/nvim ~/.config/nvim
 	mkdir ~/.zsh
 	git clone https://github.com/marlonrichert/zsh-autocomplete ~/.zsh/zsh-autocomplete
-	cd ~/.zsh/zsh-autocomplete
-	git switch -C 196810035992abea65e54852c4278af2069ee482 # use a version that actually works :/
-	git clean -df
-	cd ~/dotfiles
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
 	mv .config/* ~/.config
 	mv ./.zshrc ~/.zshrc
