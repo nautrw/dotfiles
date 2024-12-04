@@ -1,5 +1,5 @@
 endeavour:
-	yay -S zsh foot exa bat ttf-jetbrains-mono-nerd neovim ripgrep wl-clipboard xclip lazygit nodejs-n
+	yay -S zsh foot exa bat ttf-jetbrains-mono-nerd neovim ripgrep wl-clipboard xclip lazygit nodejs-n btop
 	git clone https://github.com/nautrw/nvim ~/.config/nvim
 	mkdir ~/.zsh
 	git clone https://github.com/marlonrichert/zsh-autocomplete ~/.zsh/zsh-autocomplete
