@@ -40,12 +40,6 @@ precmd () { vcs_info }
 zstyle ':vcs_info:*' formats ' %F{blue}(git:%F{yellow}%b%F{blue})%f'
 PS1='%F{cyan}%~%f$vcs_info_msg_0_ %(?.%F{green}.%F{red})➜%b%f '
 
-# color="%(?.green.red)"
-# 
-# zstyle ':vcs_info:*' formats "%F{$color}─[%fgit:%F{$color}%b%F{$color}]%f"
-# PS1='%F{$color}╭─[%f%n%F{$color}@%f%m%F{$color}]─[%f%~%F{$color}]%f$vcs_info_msg_0_
-# %F{$color}╰─➜%f '
-
 # Completion
 setopt interactivecomments transientrprompt
 
