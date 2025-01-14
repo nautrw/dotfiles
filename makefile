@@ -1,5 +1,5 @@
 endeavour:
-	yay -S zsh foot exa bat ttf-jetbrains-mono-nerd neovim ripgrep wl-clipboard xclip lazygit nodejs-n btop
+	yay -S zsh kitty exa bat ttf-jetbrains-mono-nerd neovim ripgrep wl-clipboard xclip lazygit nodejs-n btop
 	git clone https://github.com/nautrw/nvim ~/.config/nvim
 	mkdir ~/.zsh
 	git clone https://github.com/marlonrichert/zsh-autocomplete ~/.zsh/zsh-autocomplete
@@ -11,4 +11,4 @@ endeavour:
 	echo "Installation complete! You should reboot your computer (run 'reboot') for the changes to take place."
 
 uninstall:
-	rm -rf ~/.zsh ~/.zshrc ~/.config/nvim ~/.config/fontconfig ~/.config/foot ~/.local/share/nvim ~/.local/state/nvim
+	rm -rf ~/.zsh ~/.zshrc ~/.config/nvim ~/.config/fontconfig ~/.config/kitty ~/.local/share/nvim ~/.local/state/nvim
