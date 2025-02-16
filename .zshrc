@@ -1,3 +1,6 @@
+### PATH
+export PATH="$PATH:/home/$USER/.local/bin"
+
 ### Aliases
 alias fucking="sudo"
 alias ls="exa"
