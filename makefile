@@ -11,4 +11,4 @@ endeavour:
 	echo "Installation complete! You should reboot your computer (run 'reboot') for the changes to take place."
 
 uninstall:
-	rm -rf ~/.zsh ~/.zshrc ~/.config/nvim ~/.config/fontconfig ~/.config/kitty ~/.local/share/nvim ~/.local/state/nvim
+	rm -rf ~/.zsh ~/.zshrc ~/.config/nvim ~/.config/fontconfig ~/.config/foot ~/.local/share/nvim ~/.local/state/nvim
