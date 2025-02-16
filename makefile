@@ -6,7 +6,6 @@ endeavour:
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
 	mv .config/* ~/.config
 	mv ./.zshrc ~/.zshrc
-	sudo n i latest
 	chsh -s /bin/zsh
 	echo "Installation complete! You should reboot your computer (run 'reboot') for the changes to take place."
 
