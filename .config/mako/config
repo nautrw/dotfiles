@@ -1,0 +1,21 @@
+font=monospace 10
+format=<b>%a ⏵</b> %s\n%b
+sort=-time
+output=DP-2
+layer=overlay
+anchor=top-right
+background-color=#0b0f10
+width=300
+height=110
+margin=5
+border-size=1
+border-color=#c5c8c9
+border-radius=5
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=1
+
+[urgency=high]
+background-color=#ff0000
+border-color=#800000
+default-timeout=0
