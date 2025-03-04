@@ -1,0 +1,7 @@
+# full - resized - wal - thumb -  fastresize - kmeans
+backend = "fastresize"
+
+[templates]
+waybar = { src = "waybar-colors.css", dst = "~/.config/waybar/colors.css" }
+mako = { src = "mako", dst = "~/.config/mako/config" }
+zathura = { src = "zathurarc", dst = "~/.config/zathura/zathurarc" }
