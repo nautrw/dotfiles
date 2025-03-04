@@ -5,7 +5,7 @@
 CHOSEN=$(printf "Lock\nSuspend\nReboot\nShutdown\nLog Out" | rofi -i -dmenu)
 
 case "$CHOSEN" in
-	"Lock") grim -t png -o /tmp/lockscreen_bg.png && hyprlock ;;
+	"Lock") sh ~/.config/hypr/scripts/lock ;;
 	"Suspend") systemctl suspend-then-hibernate ;;
 	"Reboot") reboot ;;
 	"Shutdown") poweroff ;;
