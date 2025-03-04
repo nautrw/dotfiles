@@ -4,10 +4,10 @@
     "spacing": 4,
     "modules-left": [
         "hyprland/workspaces",
-        "custom/media"
+        "custom/winicon",
+        "hyprland/window"
     ],
     "modules-center": [
-        "hyprland/window"
     ],
     "modules-right": [
         "pulseaudio",
@@ -17,11 +17,21 @@
         "clock",
         "tray",
     ],
+    "hyprland/workspaces": {
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "persistent-workspaces": {
+            "*": 10
+        }
+    },
+    "custom/winicon": {
+        "format": "[]="
+    },
     "pulseaudio": {
         "format": "[{volume}% {icon}  | {format_source}]",
         "format-bluetooth": "[{volume}% {icon} {format_source}]",
         "format-bluetooth-muted": "[  {icon} {format_source}]",
-        "format-muted": " {format_source}",
+        "format-muted": "[ | {format_source}]",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
