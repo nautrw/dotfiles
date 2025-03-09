@@ -1,4 +1,4 @@
-set recolor "false"
+set recolor "true"
 
 set completion-bg "{{background}}"
 set completion-fg "{{foreground}}"
