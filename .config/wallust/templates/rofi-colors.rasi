@@ -1,0 +1,14 @@
+* {
+    background: {{background}};
+    foreground: {{foreground}};
+
+    bg: @background;
+    fg: @foreground;
+
+    normal-background: @bg;
+    normal-foreground: @fg;
+    alternate-normal-background: @bg;
+    alternate-normal-foreground: @fg;
+    selected-normal-background: @fg;
+    selected-normal-foreground: @bg;
+}

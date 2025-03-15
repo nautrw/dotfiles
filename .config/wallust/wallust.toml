@@ -5,3 +5,4 @@ backend = "fastresize"
 waybar = { src = "waybar-colors.css", dst = "~/.config/waybar/colors.css" }
 mako = { src = "mako", dst = "~/.config/mako/config" }
 zathura = { src = "zathurarc", dst = "~/.config/zathura/zathurarc" }
+rofi = { src = "rofi-colors.rasi", dst = "~/.config/rofi/colors.rasi"}

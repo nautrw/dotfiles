@@ -1,15 +1,6 @@
-* {
-    background: #0B0F10;
-    foreground: #c5c8c9;
+@import "~/.config/rofi/colors.rasi"
 
-    bg: @background;
-    fg: @foreground;
-    normal-background: @bg;
-    normal-foreground: @fg;
-    alternate-normal-background: @bg;
-    alternate-normal-foreground: @fg;
-    selected-normal-background: @fg;
-    selected-normal-foreground: @bg;
+* {
     font: "monospace 12.5";
 }
 
@@ -58,7 +49,7 @@ listview {
 
 mainbox {
     background-color: @bg;
-    text-color: transparent;
+    text-color: @fg;
     children: [ inputbar, listview ];
     padding: 7px;
     spacing: 5px;
