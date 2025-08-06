@@ -1,0 +1,14 @@
+#!/bin/bash
+
+WALLPAPER_DIRECTORY="$HOME/Pictures/Wallpapers"
+
+PICTURES=($(find -L ${WALLPAPER_DIRECTORY} -type f \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.pnm" -o -name "*.tga" -o -name "*.tiff" -o -name "*.webp" -o -name "*.bmp" -o -name "*.farbfeld" -o -name "*.gif" \)))
+SELECTED_WALLPAPER=${PICTURES[ $RANDOM % ${#PICTURES[@]} ]}
+
+FPS=60
+TYPE="any" # Idk why but this is the one with the cool circle thingy
+DURATION=1
+BEZIER=".43,1.19,1,.4"
+SWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION --transition-bezier $BEZIER"
+
+swww query || swww-daemon --format xrgb && swww img ${SELECTED_WALLPAPER} $SWWW_PARAMS

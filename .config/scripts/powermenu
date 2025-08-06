@@ -1,0 +1,12 @@
+#!/bin/sh
+
+CHOSEN=$(printf "  Lock\n󰒲  Suspend\n󰑓  Reboot\n⏻  Shutdown\n  Log Out" | rofi -i -dmenu)
+
+case "$CHOSEN" in
+	"  Lock") swaylock ;;
+	"󰒲  Suspend") systemctl suspend-then-hibernate ;;
+	"󰑓  Reboot") reboot ;;
+	"⏻  Shutdown") poweroff ;;
+	"  Log Out") hyprctl dispatch exit ;;
+	*) exit 1 ;;
+esac
