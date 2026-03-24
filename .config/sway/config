@@ -1,4 +1,0 @@
-include {
-    ~/.config/sway/modules/*
-    /etc/sway/config.d/*
-}
