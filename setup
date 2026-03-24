@@ -1,0 +1,21 @@
+#!/bin/bash
+
+yay --noconfirm -S zsh zsh-autosuggestions-git zsh-fast-syntax-highlighting-git eza bat wl-clipboard nodejs-n rustup rocm-smi-lib btop tree helium-browser-bin xdg-desktop-portal-wlr mango swaylock swaybg awww waybar xdg-desktop-portal-gtk xdg-desktop-portal-gnome sddm kitty rofi blueman waypaper ttf-liberation ttf-dejavu ttf-roboto ttf-symbola blueman xorg-xwayland qt6-wayland mangowc wlr-randr breeze breeze-gtk qt5ct qt6ct nwg-look ttf-ioskeley-mono-nerd ttf-rubik-vf neovim-nightly network-manager-applet openrgb mpv qt5-graphicaleffects qt5-multimedia qt5-quickcontrols qt5-quickcontrls2 qt5-svg
+
+# neovim stuff, it's better to have this stuff set up before installing neovim's stuff
+sudo n i latest
+rustup default stable
+yay --noconfirm -S novim python-pynvim tree-sitter-cli-git
+
+# services
+sudo systemctl enable sddm bluetooth
+systemctl --user enable mpris-proxy.service
+
+# move files
+cp ./.zshrc ~
+cp ./.alsoftrc ~
+cp ./.zprofile ~
+cp -r ./.config/* ~/.config
+
+# finish
+echo "finished installing; you may run `reboot` now"

@@ -1,0 +1,31 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+add_newline = false
+
+format = "$directory$python$git_branch$character"
+
+[character]
+success_symbol = '[󰘧](bold green)'
+error_symbol = '[󰘧](bold red)'
+vimcmd_symbol = '[](bold blue)'
+vimcmd_replace_symbol = '[](bold yellow)'
+vimcmd_replace_one_symbol = '$vimcmd_replace_symbol'
+vimcmd_visual_symbol = '[](bold purple)'
+
+[git_branch]
+symbol = ""
+style = "bold yellow"
+format = "[\\($symbol $branch\\)]($style) "
+
+[directory]
+read_only = "(󰌾) "
+read_only_style = "bold red"
+style = "italic blue"
+truncation_length = 5
+truncate_to_repo = false
+truncation_symbol = "/"
+format = "[$read_only]($read_only_style)[$path]($style) "
+
+[python]
+symbol = " " 
+style = "bold bright-yellow"
+format = "[\\($symbol$version( @ $virtualenv)\\)]($style) "

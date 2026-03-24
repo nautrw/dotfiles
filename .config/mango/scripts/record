@@ -1,0 +1,5 @@
+#!/bin/bash
+
+file=~/Videos/recordings/"$(date +%s)".mp4
+gpu-screen-recorder -w region -region "$(slurp -b '#00000090' -w 0 -f %wx%h+%x+%y)" -o "$file"
+wl-copy file:/"$file" -t text/uri-list
