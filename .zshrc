@@ -18,6 +18,9 @@ alias ls="exa"
 alias ocat="cat" # the original cat
 alias cat="bat"
 
+alias nivm="nvim" # nvim mispellings
+alias nv="nvim"
+
 ### Python Venvs
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd automatically_activate_python_venv
